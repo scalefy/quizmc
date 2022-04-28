@@ -75,9 +75,9 @@ let questions = [
       question: "Em resumo qual a principal preocupação que o Embaixador da Experiência do Cliente precisa ter com o apoio na manutenção do material de marketing?",
       answer: "Revisar as peças de comunicação de acordo com os guias de implementação, assegurando de que estejam limpas e em bom estado de conservação, notificar caso estejam danificadas ou seja necessário trocá-las",
       options: [
+        "Somente posicionar os materiais de material de marketing quando o assistente de trade marketing estiver no restaurante",
         "Manter guardado o material de material de marketing em ambiente exclusivo",
         "Posicionar todos os materiais de material de marketing de acordo com seu conhecimento",
-        "Somente posicionar os materiais de material de marketing quando o assistente de trade marketing estiver no restaurante",
         "Revisar as peças de comunicação de acordo com os guias de implementação, assegurando de que estejam limpas e em bom estado de conservação, notificar caso estejam danificadas ou seja necessário trocá-las",
       ]
   },
@@ -88,8 +88,9 @@ let questions = [
     options: [
       "Criar Vínculos, oferecer um produto, venda além do balcão, fornecer informações sobre EOTF",
       "Hospitalidade, Entretenimento com a familia, venda além do balcão, apoio na manutenção do material de marketing, tour e celebração de festa de aniversário.",
-      "Nenhuma das alternativas",
       "Criar vínculos, oferecer um produto, fornecer informações sobre o EOTF.",
+      "Nenhuma das alternativas",
+
      ]
   },
   {
@@ -99,8 +100,8 @@ let questions = [
     options: [
       "Chega no Restaurante, Entra no Restaurante, Espera para fazer o pedido, Paga , Retira o pedido, Come, Tem um tempo só dele, Sai do restaurante e Reflexão sobre a visita",
       "Entra no Restaurante, Espera para fazer o pedido, Paga e espera o pedido, Retira o pedido, Come, Tem um tempo só dele, Sai do restaurante",
-      "Nenhuma das alternativas",
       "Chega no Restaurante, Entra no Restaurante, Espera para fazer o pedido, Paga e espera o pedido, Retira o pedido, Come, Tem um tempo só dele, Sai do restaurante e Reflexão sobre a visita",
+      "Nenhuma das alternativas",
     ]
   },
   {
@@ -121,10 +122,10 @@ let questions = [
     question: "Quais são os objetivos do LSM?",
     answer: "Aumentar a participação do restaurante na comunidade",
     options: [
-      "Todas as alternativas",
-      "Aumentar a participação do restaurante na comunidade",
-      "Diferenciar o restaurante da concorrência.",
       "Trazer personalidade local para a publicidade e as promoções nacionais.",
+      "Aumentar a participação do restaurante na comunidade",
+      "Todas as alternativas",
+      "Diferenciar o restaurante da concorrência.",
     ]
   },
   {
@@ -133,9 +134,9 @@ let questions = [
     answer: "Gerar bons Momentos para as pessoas sendo nós mesmos",
     options: [
       "Manter uma postura séria o tempo todo, para gerar mais profissionalismo",
+      "Gerar bons Momentos para as pessoas sendo nós mesmos",
       "Treinar os funcionários a ser educado e gentil",
       "Todas as alternativas",
-      "Gerar bons Momentos para as pessoas sendo nós mesmos",
     ]
   },
   {
