@@ -159,19 +159,11 @@ function showResult(){
     quiz_box.classList.remove("activeQuiz"); //hide quiz box
     result_box.classList.add("activeResult"); //show result box
     const scoreText = result_box.querySelector(".score_text");
-    if (userScore >= 4 || userScore <= 5){ // if user scored more than 3
-        //creating a new span tag and passing the user score number and total question number
-        let scoreTag = '<span>e parabens 🎉, Você acertou <p>'+ userScore +'</p> de <p>'+ questions.length +'</p></span>';
-        scoreText.innerHTML = scoreTag;  //adding new span tag inside score_Text
-    }
-    else if(userScore >= 2 || userScore <= 3){ // if user scored more than 1
-        let scoreTag = '<span>e muito bem 😎, Voce acertou <p>'+ userScore +'</p> de <p>'+ questions.length +'</p></span>';
+    if (userScore <= 13){
+        let scoreTag = '<span> Estude mais você acertou <p>'+ userScore +'</p> de <p>'+ questions.length +'</p></span>';
         scoreText.innerHTML = scoreTag;
-    }else if(userScore >= 1 || userScore <= 1){ // if user scored more than 1
-        let scoreTag = '<span> muito bem, Voce acertou <p>'+ userScore +'</p> de <p>'+ questions.length +'</p></span>';
-        scoreText.innerHTML = scoreTag;
-    }else{ // if user scored less than 1
-        let scoreTag = '<span> estude um pouco mais 😐, Você acertou <p>'+ userScore +'</p> de <p>'+ questions.length +'</p></span>';
+    }else{
+        let scoreTag = '<span> Parabens você acertou <p>'+ userScore +'</p> de <p>'+ questions.length +'</p></span>';
         scoreText.innerHTML = scoreTag;}
 }
 

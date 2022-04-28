@@ -163,7 +163,7 @@ let questions = [
   {
     numb: 14,
     question: "Quais são os princípios centrais dentro da Viagem do Cliente?",
-    answer:"", 
+    answer:"Conectar-se ao cliente, priorizar o cliente, servir a melhor comida e ser autêntico", 
     options: [
       "Conectar-se ao cliente, priorizar o cliente, servir a melhor comida e ser autêntico",
       "Conectar-se ao cliente, priorizar o cliente, ser rápido e conveniente",
