@@ -124,8 +124,8 @@ let questions = [
     options: [
       "Trazer personalidade local para a publicidade e as promoções nacionais.",
       "Aumentar a participação do restaurante na comunidade",
-      "Diferenciar o restaurante da concorrência.",
       "Todas as alternativas",
+      "Diferenciar o restaurante da concorrência.",
     ]
   },
   {

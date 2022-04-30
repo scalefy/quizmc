@@ -8,7 +8,12 @@
 }
 
 body{
-    background: #00060c;
+    height: 100%;
+    width: 100%;
+    background: url(https://wallpaperaccess.com/full/763662.jpg);
+    top: 50%;
+    left: 50%;
+    translate: (-50%, -50%);
 }
 
 ::selection{
@@ -19,22 +24,29 @@ body{
 .start_btn,
 .info_box,
 .quiz_box,
-.result_box{
+.result_box{ 
     position: absolute;
+    height: 70%; /*altura*/
+    width: 60%; /*largura*/
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
                 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
 }
-
+.quiz_box.activeQuiz{
+    background-color: #fff;
+}
 .info_box.activeInfo,
 .quiz_box.activeQuiz,
 .result_box.activeResult{
+    top: 40%;
+    left: 50%;
     opacity: 1;
     z-index: 5;
     pointer-events: auto;
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) ;
 }
 
 .start_btn button{
@@ -45,12 +57,13 @@ body{
     outline: none;
     border: none;
     border-radius: 5px;
-    background: #fff;
+    background-color: #fff;
     cursor: pointer;
 }
 
 .info_box{
-    width: 540px;
+    top: 50%;
+    left: 50%;
     background: #fff;
     border-radius: 5px;
     transform: translate(-50%, -50%) scale(0.9);
@@ -108,8 +121,9 @@ body{
 }
 
 .quiz_box{
-    width: 550px;
-    background: #fff;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
     border-radius: 5px;
     transform: translate(-50%, -50%) scale(0.9);
     opacity: 0;
@@ -255,6 +269,7 @@ section .option_list .option .icon{
 }
 
 footer{
+    background-color: #fff;
     height: 60px;
     padding: 0 30px;
     display: flex;
@@ -380,4 +395,90 @@ footer button.show{
 .buttons button.quit:hover{
     color: #fff;
     background: #007bff;
+}
+
+/* tela de loguin comça apartir daqui*/
+.wrap{
+    background-color: #ffffff99;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    padding-bottom:30px ;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px 0px #00000080;
+    
+} 
+.inputLogin input{
+    width: 100%;
+    padding: 5px 5px;
+    border: 0;
+    border-bottom: 2px solid #000000;
+    background-color: transparent;
+    outline: 0;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    border-radius: 0;
+}
+.inputLogin{
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.inputLogin input:focus{
+    border-bottom: 2px solid #000000;
+}
+.inputLogin label{
+    color: #000000;
+    pointer-events:none ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-in-out;
+}
+.inputLogin input:focus + label{
+    font-size: 13px;
+    margin-top: 0;
+    color:#000000;
+}
+.btnLogin{
+    font-weight: bold;
+    display: inline-block;
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    margin-top: 10%;
+    border-radius: 5px;
+    padding: 5px;
+    width: 50%;
+    font-size: medium;
+    text-align: center;
+    outline: 0;
+    transition: all .3s ease-out;
+}
+.btnLogin:hover{
+    background-color: #ff000080;
+    color: #ffffff;
+}
+.Text{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.justify-center{
+    display: flex;
+    justify-content: center;
+}
+.inputLogin input:focus + label,
+.inputLogin input:valid + label {
+  font-size: 13px;
+  margin-top: 0;
+  color: #000000;
 }

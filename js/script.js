@@ -212,3 +212,19 @@ function queCounter(index){
     let totalQueCounTag = '<span><p>'+ index +'</p> of <p>'+ questions.length +'</p> Questions</span>';
     bottom_ques_counter.innerHTML = totalQueCounTag;  //adding new span tag inside bottom_ques_counter
 }
+
+//tela de loguin apartir daqui//
+
+
+function entrar(){
+
+    let usuario = document.querySelector('#user')
+    let senha = document.querySelector('#pass')
+    
+        if(usuario.value == "alefi" && senha.value == "123456"){
+            window.location.replace('./quiz.html')
+            
+        }else{
+            alert('Usuario ou senha incorreto! Tente novamente!')
+        }
+    }

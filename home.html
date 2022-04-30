@@ -1,82 +1,32 @@
-<!-- Created By CodingNepal - www.codingnepalweb.com  -->
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awesome Quiz App | CodingNepal</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- FontAweome CDN Link para ícones-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="./style.css"/>
+  <title>Teste Anf</title>
 </head>
 <body>
-    <!-- Botão de start quiz -->
-    <div class="start_btn"><button>Começar o Quiz</button></div>
-
-    <!-- caixa de informações do quiz -->
-    <div class="info_box">
-        <div class="info-title"><span>Regras do Quiz</span></div>
-        <div class="info-list">
-            <div class="info"><b>1-</b>  Você tem <span>25 segundos</span> para responder as questões.</div>
-            <div class="info"><b>2-</b> Se nao responder no tempo, a pergunta será anulada</div>
-            <div class="info"><b>3-</b> Você não pode selecionar nenhuma opção quando o tempo acabar</div>
-            <div class="info"><b>4-</b> Você não pode sair do Quiz enquanto estiver jogando</div>
-            <div class="info"><b>5-</b> Você receberá pontos com base em suas respostas corretas</div>
-        </div>
-        <div class="buttons">
-            <button class="quit">Sair </button>
-            <button class="restart">Continuar</button>
-        </div>
-    </div>
-
-    <!-- Quiz Box -->
-    <div class="quiz_box">
-        <header>
-            <div class="title">Perguntas Teste Anfitriã</div>
-            <div class="timer">
-                <div class="time_left_txt">Tempo restante</div>
-                <div class="timer_sec">25</div>
-            </div>
-            <div class="time_line"></div>
-        </header>
-        <section>
-            <div class="que_text">
-                <!-- Aqui eu inseri uma pergunta no JavaScript -->
-            </div>
-            <div class="option_list">
-                <!-- Aqui eu inseri opções no JavaScript -->
-            </div>
-        </section>
-
-        <!-- footer of Quiz Box -->
-        <footer>
-            <div class="total_que">
-                <!-- Aqui eu inseri o número de contagem de perguntas do JavaScript -->
-            </div>
-            <button class="next_btn">Próxima Questão</button>
-        </footer>
-    </div>
-
-    <!-- Result Box -->
-    <div class="result_box">
-        <div class="icon">
-            <i class="fas fa-crown"></i>
-        </div>
-        <div class="complete_text">Você completou o Quiz!</div>
-        <div class="score_text">
-            <!-- Aqui eu inseri o Resultado da Pontuação do JavaScript -->
-        </div>
-        <div class="buttons">
-            <button class="restart">Repetir</button>
-            <button class="quit">Sair</button>
-        </div>
-    </div>
-
-    <!-- Dentro deste arquivo JavaScript eu inseri apenas Perguntas e Opções -->
-    <script src="js/questions.js"></script>
-
-    <!-- Dentro deste arquivo JavaScript eu codifiquei todos os códigos do teste -->
-    <script src="js/script.js"></script>
-
+  <div class="wrap"> <!--container-->
+      <div class="boxlogin"> <!--card-->
+          <div class="Text">
+              <span><b>LOGUIN</b></span>
+          </div>
+          <div class="inputLogin">
+            <input id="user" type="text" placeholder="" required/> 
+            <label>Usuario</label>
+          </div>
+          <div class="inputLogin">
+            <input id="pass" type="password" placeholder="" required/>
+            <label>Senha</label>
+          </div>
+          <div class="justify-center">
+            <button id="entrar" onclick="entrar()" class="btnLogin" >  Entrar </button>
+          </div>      
+      </div>
+  </div>
+  <script  src="js/script.js"></script>
 </body>
-</html>
